@@ -9,6 +9,7 @@ fn main() {
     let captures = re.captures_iter(&input);
     let mut total: i32 = 0;
     for d in captures {
+        // TODO: the numbers themselves can be extracted by capture groups instead of doing a second match
         println!("{}", &d[0]);
         let mut new_term: i32 = 1;
         let number_captures = number_re.captures_iter(&d[0]);
