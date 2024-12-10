@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let input = fs::read_to_string("./input.txt").expect("input exists");
+    let input = fs::read_to_string("./src/input.txt").expect("input exists");
     let lines = input.lines();
     let mut left_numbers: Vec<i32> = Vec::new();
     let mut right_numbers: Vec<i32> = Vec::new();
